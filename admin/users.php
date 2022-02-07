@@ -1,11 +1,11 @@
 <?php /* Starting with a new php code */
- $pdo = new PDO('mysql:dbname=furniture;host=127.0.0.1', 'student', 'student',[PDO::ATTR_ERRMODE =>  PDO::ERRMODE_EXCEPTION ]);/*this line of code will help to connect to the existing database*/
+ include '../dbConnection.php';/*this line of code will help to connect to the existing database*/
 session_start();/* from here the coding for the webpage starts*/
 ?>
 <!DOCTYPE html><!--the html codes of the webpage starts here  -->
 <html><!--this line of code starts with html tag -->
 	<head><!--this code starts the head tag -->
-		<link rel="stylesheet" href="/styles.css"/><!--this code will include the css file  -->
+		<link rel="stylesheet" href="../styles.css"/><!--this code will include the css file  -->
 		<title>Fran's Furniture - Home</title><!--this code will represent the title of the webpage -->
 	</head><!--here the head tag is closed  -->
 	<body><!--we start with the body of the webpage -->
@@ -17,19 +17,19 @@ session_start();/* from here the coding for the webpage starts*/
 				<p>Sat: 09:00-17:00</p><!--for the weekend saturday the timings are included  -->
 				<p>Sun: 10:00-16:00</p><!-- this code will help to show the timings for sunday -->
 			</aside><!--the side tag ends here as the information we wanted on the side is over  -->
-			<h1>Fran's Furniture</h1><!--the header tag has heading number one here  -->
+			<h1>RR Furniture</h1><!--the header tag has heading number one here  -->
 </section><!--the first section has been closed here  -->
 	</header><!--the main header tag is closed here  -->
 	<nav><!--here we start with the nav tag -->
 		<ul><!--all links are added under this tag -->
-			<li><a href="/">Home</a></li><!--this link will open the home page -->
-			<li><a href="/furniture.php">Our Furniture</a></li><!--this link will open the public furniture page -->
-			<li><a href="/about.html">About Us</a></li><!--this page will open then link about the sellers who are frans furniture -->
-			<li><a href="/contact.php">Contact us</a></li><!--this specific link will open the contacts page -->
-			<li><a href="/admin/logout.php">Logout</a></li><!--this will logout of the admin page  -->
+		    <li><a href="../index.php">Home</a></li><!--this link will open the home page -->
+			<li><a href="../furniture.php">Our Furniture</a></li><!--this link will open the public furniture page -->
+			<li><a href="../about.php">About Us</a></li><!--this page will open then link about the sellers who are frans furniture -->
+			<li><a href="../contact.php">Contact us</a></li><!--this specific link will open the contacts page -->
+			<li><a href="logout.php">Logout</a></li><!--this will logout of the admin page  -->
 </ul><!--here we close the ul tag -->
 </nav><!--the nav class is closed here  -->
-<img src="/images/randombanner.php"/><!--this will get image for the partial background  -->
+<img src="../images/randombanner.php"/><!--this will get image for the partial background  -->
 	<main class="admin"><!--here we enter in the main class called admin -->
 <section class="left"><!--now we enter into new section class on the left of the page  -->
 		<ul><!-- we start with the new ul tag-->

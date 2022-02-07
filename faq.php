@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="/styles.css"/>
+		<link rel="stylesheet" href="styles.css"/>
 		<title>Fran's Furniture - Home</title>
 	</head>
 	<body>
@@ -13,17 +13,17 @@
 				<p>Sat: 09:00-17:00</p>
 				<p>Sun: 10:00-16:00</p>
 			</aside>
-			<h1>Fran's Furniture</h1>
+			<h1>RR Furniture</h1>
 
 		</section>
 	</header>
 	<nav>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/furniture.php">Our Furniture</a></li>
-			<li><a href="/about.html">About Us</a></li>
-			<li><a href="/contact.php">Contact us</a></li>
-			<li><a href="/faq.php">FAQs</a></li>
+		    <li><a href="index.php">Home</a></li>
+			<li><a href="furniture.php">Our Furniture</a></li>
+			<li><a href="about.php">About Us</a></li>
+			<li><a href="contact.php">Contact us</a></li>
+			<li><a href="faq.php">FAQs</a></li>
 
 		</ul>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="/styles.css"/>
+		<link rel="stylesheet" href="styles.css"/>
 		<title>Fran's Furniture - Our Furniture</title>
 	</head>
 	<body>
@@ -13,17 +13,17 @@
 				<p>Sat: 09:00-17:00</p>
 				<p>Sun: 10:00-16:00</p>
 			</aside>
-			<h1>Fran's Furniture</h1>
+			<h1>RR Furniture</h1>
 
 		</section>
 	</header>
 	<nav>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/furniture.php">Our Furniture</a></li>
-			<li><a href="/about.html">About Us</a></li>
-			<li><a href="/contact.php">Contact us</a></li>
-			<li><a href="/faq.php">FAQs</a></li>
+		    <li><a href="index.php">Home</a></li>
+			<li><a href="furniture.php">Our Furniture</a></li>
+			<li><a href="about.php">About Us</a></li>
+			<li><a href="contact.php">Contact us</a></li>
+			<li><a href="faq.php">FAQs</a></li>
 
 		</ul>
 
@@ -39,7 +39,7 @@
 
 
 	<?php
-$pdo = new PDO('mysql:dbname=furniture;host=127.0.0.1', 'student', 'student', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+include 'dbConnection.php';
 $categoryQuery = $pdo->prepare('SELECT * FROM category');
 $categoryQuery->execute();
 
@@ -87,7 +87,11 @@ if ($numResults > 0) {
         echo '<h3>' . $categories[$furniture['categoryId']] . '</h3>';
         echo '<h4>£' . $furniture['price'] . '</h4>';
         echo '<p>' . $furniture['description'] . '</p>';  /*for description */ 
-
+        echo '<form action="payment.php" method="GET">
+		<input type="number" name="quantity" id="quantity" placeholder="quantity you want to buy" required>
+		<input type="hidden" name="price" id="price" value='.$furniture["price"].' >
+		<input style="margin-left:0" type="submit" value="Buy">
+	</form>';
         echo '</div>';
         echo '</li>';
 		}

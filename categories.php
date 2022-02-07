@@ -1,4 +1,5 @@
-<?php $pdo = new PDO('mysql:dbname=furniture;host=127.0.0.1', 'student', 'student', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);?>
+<?php 
+include 'dbConnection.php';?>
 
 <ul>
 
