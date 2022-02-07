@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css"/>
-		<title>Fran's Furniture - Our Furniture</title>
+		<title>RR's Furniture- Our Furniture</title>
 	</head>
 	<body>
 	<header>
@@ -92,6 +92,13 @@ if ($numResults > 0) {
 		<input type="hidden" name="price" id="price" value='.$furniture["price"].' >
 		<input style="margin-left:0" type="submit" value="Buy">
 	</form>';
+	echo '<form action="cart.php" method="GET">
+	<input type="hidden" name="id" value='.$furniture["id"].'>
+	<input type="hidden" name="hidden_name" value='.$furniture["name"].'>
+	<input type="hidden" name="hidden_price" value='.$furniture["price"].'>
+	<input type="number" name="quantity" placeholder="enter the quantity">
+	<input type="submit" name="add_to_cart" >
+	</form>';
         echo '</div>';
         echo '</li>';
 		}
@@ -110,7 +117,7 @@ if ($numResults > 0) {
 
 
 	<footer>
-		&copy; Fran's Furniture <?php
+		&copy; RR's Furniture <?php
 
 echo date("Y");
 

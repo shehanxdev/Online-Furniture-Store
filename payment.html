@@ -1,13 +1,3 @@
-<?php
-if(isset($_GET['total'])){
-    $total=$_GET['total'];
-}
-else{
-    $price=$_GET['price'];
-$quantity=$_GET['quantity'];
-$total=$quantity*$price;
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -53,7 +43,7 @@ $total=$quantity*$price;
         
         <br> <br>
         
-        <input type="text" name="" id="" value=&#36;<?php echo $total; ?>>
+        <input type="text" name="" id="">
         <br><br><br><br>
         <div class="des"><p>All transfers are subject to review and could be delayed or stopped if we or your bank identify an issue.</p></div>
 

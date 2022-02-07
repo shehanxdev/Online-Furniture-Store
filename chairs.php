@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css"/>
-		<title>Fran's Furniture - Chairs</title>
+		<title>RR's Furniture - Chairs</title>
 	</head>
 	<body>
 	<header>
@@ -82,7 +82,7 @@
 
 
 	<footer>
-	&copy; Fran's Furniture <?php
+	&copy;RR's Furniture <?php
 
 echo date("Y");
 

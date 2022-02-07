@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css"/>
-		<title>Fran's Furniture - Wardrobes</title>
+		<title>RR's Furniture - Wardrobes</title>
 	</head>
 	<body>
 	<header>
@@ -81,7 +81,7 @@
 
 
 	<footer>
-	&copy; Fran's Furniture 2019
+	&copy; RR's Furniture 2022
 	</footer>
 </body>
 </html>

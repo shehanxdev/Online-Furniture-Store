@@ -5,7 +5,7 @@ session_start();
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css"/>
-		<title>Fran's Furniture - Home</title>
+		<title>RR's Furniture - Home</title>
 	</head>
 	<body>
 	<header>
@@ -89,9 +89,9 @@ else{
 
 
 	<footer>
-	<p>Please call us on  01604 90345 or email <a href="mailto:enquiries@fransfurniture.co.uk">enquiries@fransfurniture.co.uk</a>
+	<p>Please call us on  077 24613546 or email <a href="mailto:enquiries@rrfurniture.com">enquiries@rrfurniture.com</a>
 	</p>
-	&copy; Fran's Furniture <?php
+	&copy; RR's Furniture <?php
 
 echo date("Y");
 

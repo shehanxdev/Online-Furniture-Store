@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css"/>
-		<title>Fran's Furniture - Home</title>
+		<title>RR's Furniture - Home</title>
 	</head>
 	<body>
 	<header>
@@ -30,12 +30,12 @@
 	</nav>
 <img src="images/randombanner.php"/>
 	<main class="home">
-		<p>Welcome to Fran's Furniture. We're a family run furniture shop based in Northampton. We stock a wide variety of modern and antique furniture including laps, bookcases, beds and sofas.</p>
+		<p>Welcome to RR's Furniture. We're a family run furniture shop based in Northampton. We stock a wide variety of modern and antique furniture including laps, bookcases, beds and sofas.</p>
 	</main>
 
 
 	<footer>
-		&copy; Fran's Furniture <?php
+		&copy; RR's Furniture <?php
 
 echo date("Y");
 
